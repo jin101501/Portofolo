@@ -28,3 +28,6 @@ body
     text-align: center;
     margin-left: 10px;
   }
+  .carousel-inner{
+    float:right;
+  }
