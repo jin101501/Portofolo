@@ -11,11 +11,11 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     </head>
     <body tyle="font-family:'Poppins','Noto Sans KR',sans-serif">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary  fixed-top ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./Portofolo.html">
+                <a class="navbar-brand" href="#">
                     <img src="./image/1633269108538.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                Park JIN WOO
+                Jinwoo Park
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,13 +26,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Skill</a>
+                    <a class="nav-link" href="#skills">Skill</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Project</a>
+                      <a class="nav-link" href="#projects">Project</a>
                     </li>
                 </ul>
                 </div>
@@ -48,44 +48,46 @@
               </div>
             </div> 
           </div>
-
           <div id="about" class="section">
             <div class="container">
               <div class="row">
-                <div class="col-md-5">
-                  <img class="aboutImage" src="image/KakaoTalk_20230315_164843349.jpg " alt="" />
+                <div class="col-md-12 text-center">
+                  <h2>ABOUT</h2>       
+                  <br/>    
                 </div>
-      
+                <div class="col-md-5">
+                  <img class="aboutImage rounded" src="image/KakaoTalk_20230315_164843349.jpg " alt="" />
+                </div>
                 <div class="col-md-7">
-                  <h4 class="aboutMe">About</h4>
-                  <p>
-                   전산 직무를 수행을 하기에 앞서 필요한 지식을 갖추기 위해 웹퍼블리싱(HTM/CSS), C#언어를 통한 윈도우 폼 개발, DB의 숙달을 위해 계속해서 학습을 진행하고 있으며 <br>
-                   더 나아가 현실에 안주하지 않고 부족한 부분이 있으면 계속해서 채워나가는 개발자 입니다.
-                  </p>
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">자기소개</h5>                      
+                      <p class="card-text">전산 직무를 수행을 하기에 앞서 필요한 지식을 갖추기 위해 웹퍼블리싱(HTM/CSS, Javascript), C#을 통한 Winform 개발, DB의 숙달을 위해 계속해서 학습을 진행하고 있으며 <br>
+                        더 나아가 현실에 안주하지 않고 부족한 부분이 있으면 계속해서 채워나가는 개발자 입니다.</p>
+                      <a href="#" class="card-link">Notion</a>
+                      <a href="#" class="card-link">Github</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-            
-          <div id="skills" class="skillsSection section">
+          </div>            
+          <div id="skills" class="section">
             <div class="container">
               <div class="row">
                 <div class="col-md-12 text-center">
                   <h2>MY SKILLS</h2>
                   <p>My skills in web & programming languages.</p>
-                </div>
-      
+                </div>      
                 <div class="owl-carousel owl-theme">
                   <div class="skill">
                     <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
                     <p>기본적인 HTML 사용법 및 CSS문법을 활용하여 기능 및 동작을 확인 하였고 이를 이용하여 웹페이지를 구성하였습니다.</p>
-                  </div>
-      
+                  </div>      
                   <div class="skill">
                       <img alt="ORACLE" src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"/>
                       <p>쿼리를 이용한 데이터 조회 및 삽입 등 기능을 활욯하여 데이터를 테스트 하는 업무를 수행하였습니다.</p>
                     </div>
-
                   <div class="skill">
                     <img alt="JAVA" src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"/>
                     <p>자바 언어의 문법을 활용하여 공통소스의 구조를 개선 및 점검업무를 수행하였습니다.</p>
@@ -100,89 +102,10 @@
         </div>
         <section id="projects">
           <div class="container">
-            <div class="project-wrapper">
-              <h2 class="section-title dark-blue-text">Projects</h2>
-    
-              <!-- Each .row is a project -->
-              <article class="row">
-                <div class="project-wrapper__text">
-                  <h3 class="project-wrapper__text-title">타이머 화면 캡쳐 프로그램</h3>
-                  <p class="project-wrapper__text-info">
-                    시간을 설정하여 자동으로 화면이 캡쳐되는 프로그램 입니다.<br>
-                    <img alt=".NET" src ="https://img.shields.io/badge/.NET-512BD4?&style=for-the-badge&logo=C Sharp&logoColor=white"/> 
-                  </p>
-                </div>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="image/설정.PNG" class="d-block w-50" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="image/설정 완료.PNG" class="d-block w-50" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="image/동작 화면.PNG" class="d-block w-50" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="image/저장 화면.PNG" class="d-block w-50" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="image/중지.PNG" class="d-block w-50" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </article>
-              <!-- /END Project -->
-    
-              <!-- Each .row is a project -->
-              <article class="row">
-                <div class="project-wrapper__text">
-                  <h3 class="project-wrapper__text-title">스마트 화분</h3>
-                  <p class="project-wrapper__text-info">
-                    라즈베리파이에 온도센서(DH11), 광 조도 센서를 이용하여 온도 및 습도를 측정하고 이렇게 측정된 값에 따라서 수중 펌프 모듈과 식물 성장용 LED를 동작시켜 
-                    식물이 잘 자랄수 있도록 관리해주는 작품입니다.
-                    
-                  </p>
-                </div>
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="image/시작화면.png" class="d-block w-30" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="image/상태화면.png" class="d-block w-30" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="image/수동제어.PNG" class="d-block w-30" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </article>
-              <!-- /END Project -->
-    
-              <!-- Each .row is a project -->
-              <article class="row">
-                <div class="project-wrapper__text">
-                  <h3 class="project-wrapper__text-title">웹사이트 개발 </h3>
-                  <p class="project-wrapper__text-info">
-                    웹사이트에 관한 학습을 진행을 하면서 페이지를 만들었습니다.
-                  </p>
-                </div>
-                <div class="project-wrapper__image">
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <div class="thumbnail rounded">
-                      <img
-                        src="./image/캡처.PNG"
-                        class="img-fluid"
-                        alt="Project Image"
-                        width="1"
-                        height="767"
-                      />
-                    </div>
-                  </a>
-                </div>
-              </article>
-              <!-- /END Project -->
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2>PROJECTS</h2>                
+              </div>                    
             </div>
           </div>
         </section>

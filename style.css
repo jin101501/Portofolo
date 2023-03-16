@@ -16,8 +16,7 @@ body
 .aboutMe{
     text-align: center;
 }
-.aboutImage {
-    margin-top: 20px;
+.aboutImage {    
     max-width: 100%;
   }
   .section {
